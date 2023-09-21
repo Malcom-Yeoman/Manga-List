@@ -1,0 +1,46 @@
+/* LIGHT THEME */
+:root {
+    --primary-bg-color: #fff;
+    --primary-text-color: #333;
+    --nav-bg-color: #f7f7f7;
+    --nav-text-color: #333;
+    --nav-text-hover-color: #666;
+}
+/* DARK THEME */
+[data-theme="dark"]:root {
+    --primary-bg-color: #333;
+    --primary-text-color: #f7f7f7;
+    --nav-bg-color: #444;
+    --nav-text-color: #f7f7f7;
+    --nav-text-hover-color: #bbb;
+}
+/* BODY */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--nav-bg-color);
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+nav a {
+    text-decoration: none;
+    color: var(--nav-text-color);
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: var(--nav-text-hover-color);
+}
+/* CARDS */
