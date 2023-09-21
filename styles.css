@@ -23,6 +23,9 @@ body {
     color: var(--primary-text-color);
 }
 /* NAVBAR */
+h1 {
+    cursor: pointer;
+}
 nav {
     display: flex;
     justify-content: space-between;
@@ -44,3 +47,49 @@ nav a:hover {
     color: var(--nav-text-hover-color);
 }
 /* CARDS */
+.anime-category {
+    margin: 2rem 0;
+    padding: 10px;
+}
+.anime-slider {
+    display: flex;
+    overflow-x: scroll;
+    gap: 1rem;
+}
+.anime-card {
+    position: relative; 
+    min-width: 200px;
+    background-color: var(--nav-bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.anime-card img {
+    width: 100%;
+    display: block;
+}
+.anime-card h3 {
+    text-align: center;
+    padding: 1rem;
+}
+.anime-card .fa-heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+/* FAVORITES */
+#favoritesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+#favoritesContainer .anime-card {
+    max-width: 150px;
+}
